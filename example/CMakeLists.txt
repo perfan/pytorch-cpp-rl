@@ -1,4 +1,4 @@
-add_executable(gym_client gym_client.cpp communicator.cpp)
+add_executable(flowSolver_client flowSolver_client.cpp communicator.cpp)
 
 set(LIB_DIR ${CMAKE_CURRENT_LIST_DIR}/lib)
 set(CPPZMQ_DIR ${LIB_DIR}/cppzmq)
@@ -12,7 +12,7 @@ add_subdirectory(${SPDLOG_DIR})
 option(ZMQ_BUILD_TESTS "" OFF)
 add_subdirectory(${ZMQ_DIR})
 
-target_include_directories(gym_client 
+target_include_directories(flowSolver_client 
     PRIVATE
     .
     ../include
@@ -23,4 +23,4 @@ target_include_directories(gym_client
     ${ZMQ_DIR}/include
 )
 
-target_link_libraries(gym_client PRIVATE libzmq-static cpprl)
+target_link_libraries(flowSolver_client PRIVATE libzmq-static cpprl)

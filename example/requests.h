@@ -4,7 +4,7 @@
 
 #include <msgpack.hpp>
 
-namespace gym_client
+namespace flowSolver_client
 {
 template <class T>
 struct Request

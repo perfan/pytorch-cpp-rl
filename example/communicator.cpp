@@ -7,7 +7,7 @@
 #include "requests.h"
 #include "third_party/zmq.hpp"
 
-namespace gym_client
+namespace flowSolver_client
 {
 Communicator::Communicator(const std::string &url)
 {
