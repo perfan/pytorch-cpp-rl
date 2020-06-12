@@ -69,7 +69,7 @@ std::vector<float> flatten_vector(std::vector<std::vector<T>> const &input)
 int main(int argc, char *argv[])
 {
 
-    std::cout << "flowSolver starts working" << std::cout;
+    std::cout << "flowSolver starts working" << std::endl;
     // spdlog::set_level(spdlog::level::debug);
     // spdlog::set_pattern("%^[%T %7l] %v%$");
 
